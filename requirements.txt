@@ -1,3 +1,4 @@
-python-telegram-bot==10.0.1
-PySocks==1.6.8
+python-telegram-bot
+python-telegram-bot[socks]
 requests
+python-dotenv
