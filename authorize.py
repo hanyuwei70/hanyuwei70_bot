@@ -32,7 +32,8 @@ def authorize(priv):
         def wrapper(bot, update, *args, **kwargs):
             chat_id = update.message.chat_id
             if not check_privilige(chat_id, priv):
-                update.message.reply_text(text="You are not authorized to use this command", quote=True)
+                update.message.reply_text(
+                    text="You are not authorized to use this command", quote=True)
                 return
             return func(bot, update, *args, **kwargs)
 
